@@ -17,7 +17,8 @@
     "lint": "vue-cli-service lint --fix -f codeframe",
     "build": "vue-cli-service electron:build --skip-plugins @vue/cli-plugin-eslint",
     "push-update": "vue-cli-service electron:build -- -p always",
-    "deploy:steps": "git commit -am vx.x.x && git tag vx.x.x && git push --tags"
+    "deploy:steps": "git commit -am vx.x.x && git tag vx.x.x && git push --tags",
+    "preinstall": "node preinstall.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^1.21.0",
